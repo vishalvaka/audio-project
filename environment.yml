@@ -1,0 +1,21 @@
+# environment.yml  (conda)
+name: hum2edm
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.10
+  - pytorch=2.2
+  - torchaudio
+  - cudatoolkit=12.1          # or matching CUDA version
+  - librosa
+  - transformers>=4.39
+  - diffusers>=0.26
+  - accelerate
+  - einops
+  - hydra-core
+  - pytorch-lightning         # optional, nice trainer wrapper
+  - matplotlib
+  - jupyter
+  - pip:
+      - audioldm2 @ git+https://github.com/haoheliu/AudioLDM2.git
